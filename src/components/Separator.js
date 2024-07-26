@@ -5,9 +5,10 @@ const SeparatorComponent = () => <Separator />;
 
 const Separator = styled.div`
   width: 100%;
-  height: 1px;
+  height: 0.5px;
   background-color: #ccc;
-  margin: 8px 0;
+  margin-top: 10px;
+  margin-bottom: 8px;
 `;
 
 export default SeparatorComponent;
