@@ -64,12 +64,12 @@ const Checkbox = styled.input`
 
 const CheckMark = styled.span`
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   color: ${(props) => (props.checked ? "#fff" : "#fff")};
   background-color: ${(props) => (props.checked ? "#2469f6" : "#fff")};
-  border: 2px solid ${(props) => (props.checked ? "#2469f6" : "#e1e1e1")};
-  border-radius: 8px;
+  border: 1.5px solid ${(props) => (props.checked ? "#2469f6" : "#e1e1e1")};
+  border-radius: 6px;
   cursor: pointer;
   display: flex;
   justify-content: center;

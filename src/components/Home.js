@@ -58,7 +58,7 @@ const MainContainer = styled.div`
   align-items: center;
   padding: 20px;
   margin: 20px;
-  width: 400px;
+  width: 330px;
   border: 1px solid #ddd;
   border-radius: 10px;
   background-color: #fff;

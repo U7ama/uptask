@@ -10,7 +10,7 @@ const Button = ({ onClick }) => (
 const DoneButton = styled.button`
   background-color: #ffce22;
   border: none;
-  margin-top: -2px;
+  margin-top: -10px;
   padding: 10px 20px;
   color: #1f2128;
   font-size: 16px;

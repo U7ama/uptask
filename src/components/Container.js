@@ -49,6 +49,7 @@ const Container = ({ checkedState, handleCheckboxChange }) => {
 
 const CheckboxContainer = styled.div`
   display: flex;
+  margin-top: -10px;
   flex-direction: column;
   margin-bottom: 20px;
   width: 100%;
