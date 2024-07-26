@@ -1,6 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 
+const CheckboxLabel = ({ name, checked, onChange }) => (
+  <>
+    <Label>
+      {name.replace("page", "Page ")}
+      <CheckboxWrapper>
+        <Checkbox
+          type="checkbox"
+          name={name}
+          checked={checked}
+          onChange={onChange}
+          aria-label={`Checkbox for ${name}`}
+        />
+        <CheckMark checked={checked} />
+      </CheckboxWrapper>
+    </Label>
+  </>
+);
+
 const Label = styled.label`
   display: flex;
   justify-content: space-between;
@@ -39,23 +57,5 @@ const CheckMark = styled.span`
   background-repeat: no-repeat;
   background-position: center;
 `;
-
-const CheckboxLabel = ({ name, checked, onChange }) => (
-  <>
-    <Label>
-      {name.replace("page", "Page ")}
-      <CheckboxWrapper>
-        <Checkbox
-          type="checkbox"
-          name={name}
-          checked={checked}
-          onChange={onChange}
-          aria-label={`Checkbox for ${name}`}
-        />
-        <CheckMark checked={checked} />
-      </CheckboxWrapper>
-    </Label>
-  </>
-);
 
 export default CheckboxLabel;

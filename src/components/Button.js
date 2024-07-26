@@ -1,8 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
+const Button = ({ onClick }) => (
+  <DoneButton onClick={onClick} aria-label="Done">
+    Done
+  </DoneButton>
+);
+
 const DoneButton = styled.button`
-  background-color: #ffcc00;
+  background-color: #ffce22;
   border: none;
   padding: 10px 20px;
   color: black;
@@ -24,11 +30,5 @@ const DoneButton = styled.button`
     outline: 2px solid #2469f6;
   }
 `;
-
-const Button = ({ onClick }) => (
-  <DoneButton onClick={onClick} aria-label="Done">
-    Done
-  </DoneButton>
-);
 
 export default Button;
