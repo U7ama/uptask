@@ -49,8 +49,14 @@ const Card = ({ id, text, index, checked, onChange, moveCard }) => {
   const opacity = isDragging ? 0 : 1;
   drag(drop(ref));
   return (
-    <CardWrapper ref={ref} style={{ opacity }} data-handler-id={handlerId}>
-      <CheckboxLabel name={text} checked={checked} onChange={onChange} />
+    <CardWrapper style={{ opacity }}>
+      <CheckboxLabel
+        reff={ref}
+        handlerId={handlerId}
+        name={text}
+        checked={checked}
+        onChange={onChange}
+      />
     </CardWrapper>
   );
 };

@@ -12,7 +12,7 @@ const DoneButton = styled.button`
   border: none;
   margin-top: -2px;
   padding: 10px 20px;
-  color: black;
+  color: #1f2128;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
@@ -22,13 +22,17 @@ const DoneButton = styled.button`
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    background-color: #e6b800;
-    color: #fff;
+    background-color: #ffd84d;
+    color: black;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
   &:focus {
-    outline: 2px solid #2469f6;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #ffce22;
   }
 `;
 
