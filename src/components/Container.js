@@ -6,7 +6,7 @@ import Separator from "./Separator";
 
 const Container = ({ checkedState, handleCheckboxChange }) => {
   const [cards, setCards] = useState([
-    { id: 1, text: "All Pages" },
+    { id: 1, text: "All pages" },
     { id: 2, text: "page1" },
     { id: 3, text: "page2" },
     { id: 4, text: "page3" },
@@ -36,9 +36,8 @@ const Container = ({ checkedState, handleCheckboxChange }) => {
             onChange={handleCheckboxChange}
             moveCard={moveCard}
           />
-          {card.text === "All Pages" && (
+          {(card.text === "All pages" || card.text === "page4") && (
             <>
-              <Separator />
               <Separator />
             </>
           )}
