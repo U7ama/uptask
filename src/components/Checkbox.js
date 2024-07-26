@@ -97,7 +97,7 @@ const CheckMark = styled.span`
       right: -2px;
       bottom: -2px;
       border: 2px solid #e9f0fe;
-      border-radius: 10px;
+      border-radius: 8px;
       pointer-events: none;
     }
   }
